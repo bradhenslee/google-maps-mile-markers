@@ -1,26 +1,8 @@
-    ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+Numbered distance markers in Google Maps
+======
 
+The Google Maps API does not include methods for numbered markers or placing evenly spaced markers along a route (such as mile/kilometer markers).
 
-Hi there! Welcome to Cloud9 IDE!
+Using the computeDistanceBetween() and interpolate() methods in the google.maps.geometry.spherical library, this script traverses all nodes of a given polyline and returns an array of equally spaced marker postions.
 
-To get you started, we included a small hello world application.
-
-1) Open the hello-world.html file
-
-2) Click on the Preview button to open a live preview pane
-
-3) Make some changes to the file, save, watch the preview, and have fun!
-
-Happy coding!
-The Cloud9 IDE team
-
-
-## Support & Documentation
-
-Visit http://docs.c9.io for documentation, or http://support.c9.io for support.
-To watch some training videos, visit http://www.youtube.com/user/c9ide
+In this version the numbered marker icons are achieved by use of the Google Chart API (which is slow).
